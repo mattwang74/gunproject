@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ToyGun Vault - Premium Toy & Replica Firearms</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔫</text></svg>">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🔫</span>
+                ToyGun<span>Vault</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" onclick="openCart()">
+                    🛒
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== CONTACT HERO ===== -->
+    <section class="contact-hero">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Reach out for any questions, feedback, or support.</p>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info-card">
+                <h3>Contact Information</h3>
+                
+                <div class="contact-item">
+                    <div class="icon">📍</div>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>SHENZHEN<br>Los Angeles, CA 90001, USA</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="icon">📧</div>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>support@toygunvault.com<br>sales@toygunvault.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="icon">📞</div>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+1 (800) 555-0199<br>Mon - Fri, 9AM - 6PM PST</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="icon">💬</div>
+                    <div>
+                        <h4>Live Chat</h4>
+                        <p>Available 24/7 on our website<br>Average response time: 2 minutes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 style="margin-bottom: 30px; color: var(--dark);">Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="order">Order Status</option>
+                            <option value="returns">Returns & Refunds</option>
+                            <option value="product">Product Question</option>
+                            <option value="wholesale">Wholesale Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" placeholder="Tell us how we can help you..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Quick answers to common questions</p>
+            <div class="line"></div>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="background: var(--white); border-radius: 12px; padding: 25px 30px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <h4 style="color: var(--dark); margin-bottom: 10px;">❓ What age are your products suitable for?</h4>
+                <p style="color: var(--text-light);">Our products are designed for ages 8 and up. Airsoft guns require adult supervision for users under 18. Each product page includes specific age recommendations and safety guidelines.</p>
+            </div>
+            <div style="background: var(--white); border-radius: 12px; padding: 25px 30px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <h4 style="color: var(--dark); margin-bottom: 10px;">❓ Do you ship internationally?</h4>
+                <p style="color: var(--text-light);">Yes! We ship to over 50 countries worldwide. International shipping rates and delivery times vary by location. Free shipping is available on orders over $50 within the US.</p>
+            </div>
+            <div style="background: var(--white); border-radius: 12px; padding: 25px 30px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <h4 style="color: var(--dark); margin-bottom: 10px;">❓ What is your return policy?</h4>
+                <p style="color: var(--text-light);">We offer a 30-day hassle-free return policy. Items must be in original condition with all packaging. Contact our support team to initiate a return, and we'll provide a prepaid shipping label.</p>
+            </div>
+            <div style="background: var(--white); border-radius: 12px; padding: 25px 30px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <h4 style="color: var(--dark); margin-bottom: 10px;">❓ Are your prop replicas safe for conventions?</h4>
+                <p style="color: var(--text-light);">Yes! All our prop replicas include bright orange safety tips and are designed to be clearly identifiable as toys. We also provide safety certificates upon request for convention organizers.</p>
+            </div>
+            <div style="background: var(--white); border-radius: 12px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <h4 style="color: var(--dark); margin-bottom: 10px;">❓ Do you offer wholesale pricing?</h4>
+                <p style="color: var(--text-light);">Absolutely! We offer competitive wholesale pricing for retailers, event organizers, and film productions. Contact our sales team at sales@toygunvault.com for a custom quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section">
+        <h2>Join the ToyGun Vault Community</h2>
+        <p>Subscribe for exclusive deals, new arrivals, and insider tips.</p>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>ToyGun<span>Vault</span></h3>
+                <p>Your premier destination for toy guns, airsoft, and collectible replicas. 
+                   Quality products for enthusiasts of all ages.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="shop.html">Airsoft</a></li>
+                    <li><a href="shop.html">Nerf Blasters</a></li>
+                    <li><a href="shop.html">Water Guns</a></li>
+                    <li><a href="shop.html">Prop Replicas</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Shipping Info</a></li>
+                    <li><a href="contact.html">Returns</a></li>
+                    <li><a href="contact.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ToyGun Vault. All rights reserved. | Toy & replica firearms only.</p>
+        </div>
+    </footer>
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>🛒 Your Cart</h3>
+            <button class="close-cart">✕</button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-empty">
+                <div class="icon">🛒</div>
+                <h4>Your cart is empty</h4>
+                <p>Add some awesome toy guns!</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button class="scroll-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyGun Vault | Premium Toy & Replica Firearms</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔫</text></svg>">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🔫</span>
+                ToyGun<span>Vault</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" onclick="openCart()">
+                    🛒
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">⚡ New Collection 2026</div>
+            <h1>The Ultimate <span>Toy Gun</span> Experience</h1>
+            <p class="hero-subtitle">
+                Premium airsoft, Nerf blasters, water guns, and movie prop replicas. 
+                Built for fun, designed for enthusiasts.
+            </p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary">🛍️ Shop Now</a>
+                <a href="about.html" class="btn btn-outline">📖 Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Products</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <section class="section featured-section">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>Handpicked favorites from our collection</p>
+            <div class="line"></div>
+        </div>
+        <div class="products-grid">
+            <!-- Products rendered by JS -->
+        </div>
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="shop.html" class="btn btn-primary">View All Products →</a>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="section categories-section">
+        <div class="section-header">
+            <h2>Shop by Category</h2>
+            <p>Find your perfect match from our wide range</p>
+            <div class="line"></div>
+        </div>
+        <div class="categories-grid">
+            <a href="shop.html" class="category-card">
+                <span class="category-icon">🔫</span>
+                <h3>Airsoft</h3>
+                <p>Realistic replica firearms for tactical gameplay</p>
+            </a>
+            <a href="shop.html" class="category-card">
+                <span class="category-icon">🎯</span>
+                <h3>Nerf Blasters</h3>
+                <p>High-performance foam dart blasters</p>
+            </a>
+            <a href="shop.html" class="category-card">
+                <span class="category-icon">💧</span>
+                <h3>Water Guns</h3>
+                <p>Ultimate summer water battle weapons</p>
+            </a>
+            <a href="shop.html" class="category-card">
+                <span class="category-icon">🎬</span>
+                <h3>Prop Replicas</h3>
+                <p>Movie & game accurate collectible replicas</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section features-section">
+        <div class="section-header">
+            <h2>Why Choose Us</h2>
+            <p>We're committed to delivering the best experience</p>
+            <div class="line"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🚚</div>
+                <h3>Free Shipping</h3>
+                <p>On all orders over $50. Fast & reliable delivery worldwide.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <h3>Quality Guarantee</h3>
+                <p>Every product tested for durability and performance.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">↩️</div>
+                <h3>Easy Returns</h3>
+                <p>30-day hassle-free return policy on all purchases.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💬</div>
+                <h3>24/7 Support</h3>
+                <p>Our team is always ready to help with any questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials-section">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>Trusted by thousands of toy gun enthusiasts</p>
+            <div class="line"></div>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "The airsoft M4A1 I bought is incredibly realistic and performs flawlessly. 
+                    Customer service was outstanding when I had questions about maintenance."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JD</div>
+                    <div class="author-info">
+                        <h4>James Davidson</h4>
+                        <span>Airsoft Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "My kids absolutely love the Nerf blasters! The build quality is way better 
+                    than anything from big box stores. Worth every penny."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <h4>Sarah Mitchell</h4>
+                        <span>Parent & Collector</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "The movie prop replicas are stunningly accurate. I use them for cosplay 
+                    and they always get compliments at conventions. Highly recommended!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AK</div>
+                    <div class="author-info">
+                        <h4>Alex Kim</h4>
+                        <span>Cosplayer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section">
+        <h2>Join the ToyGun Vault Community</h2>
+        <p>Subscribe for exclusive deals, new arrivals, and insider tips.</p>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>ToyGun<span>Vault</span></h3>
+                <p>Your premier destination for toy guns, airsoft, and collectible replicas. 
+                   Quality products for enthusiasts of all ages.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="shop.html">Airsoft</a></li>
+                    <li><a href="shop.html">Nerf Blasters</a></li>
+                    <li><a href="shop.html">Water Guns</a></li>
+                    <li><a href="shop.html">Prop Replicas</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Shipping Info</a></li>
+                    <li><a href="contact.html">Returns</a></li>
+                    <li><a href="contact.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ToyGun Vault. All rights reserved. | Toy & replica firearms only.</p>
+        </div>
+    </footer>
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>🛒 Your Cart</h3>
+            <button class="close-cart">✕</button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-empty">
+                <div class="icon">🛒</div>
+                <h4>Your cart is empty</h4>
+                <p>Add some awesome toy guns!</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button class="scroll-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

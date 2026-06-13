@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ToyGun Vault - Premium Toy & Replica Firearms</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔫</text></svg>">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🔫</span>
+                ToyGun<span>Vault</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" onclick="openCart()">
+                    🛒
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== SHOP HERO ===== -->
+    <section class="shop-hero">
+        <h1>Our Collection</h1>
+        <p>Browse our full range of toy guns, airsoft, and prop replicas</p>
+    </section>
+
+    <!-- ===== FILTERS ===== -->
+    <div class="shop-filters">
+        <div class="filters-container">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="airsoft">Airsoft</button>
+                <button class="filter-btn" data-filter="nerf">Nerf</button>
+                <button class="filter-btn" data-filter="water">Water Guns</button>
+                <button class="filter-btn" data-filter="prop">Prop Replicas</button>
+            </div>
+            <div class="filter-group">
+                <select class="sort-select">
+                    <option value="default">Sort by: Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Highest Rated</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PRODUCTS GRID ===== -->
+    <div class="shop-grid">
+        <!-- Products rendered by JS -->
+    </div>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section">
+        <h2>Join the ToyGun Vault Community</h2>
+        <p>Subscribe for exclusive deals, new arrivals, and insider tips.</p>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>ToyGun<span>Vault</span></h3>
+                <p>Your premier destination for toy guns, airsoft, and collectible replicas. 
+                   Quality products for enthusiasts of all ages.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="shop.html">Airsoft</a></li>
+                    <li><a href="shop.html">Nerf Blasters</a></li>
+                    <li><a href="shop.html">Water Guns</a></li>
+                    <li><a href="shop.html">Prop Replicas</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Shipping Info</a></li>
+                    <li><a href="contact.html">Returns</a></li>
+                    <li><a href="contact.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ToyGun Vault. All rights reserved. | Toy & replica firearms only.</p>
+        </div>
+    </footer>
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>🛒 Your Cart</h3>
+            <button class="close-cart">✕</button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-empty">
+                <div class="icon">🛒</div>
+                <h4>Your cart is empty</h4>
+                <p>Add some awesome toy guns!</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button class="scroll-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
